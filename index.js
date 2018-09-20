@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyparser.json());
 
 // connecting to mongodb
-const mongouri = require('config/keys.js').mongoURI;
+const mongouri = require('./config/keys.js').mongoURI;
 mongoose.connect(mongouri)
     .then( () => console.log('Connected to MongoDB'))
     .catch( err => console.log('Error while connecting to MongoDB', err));
