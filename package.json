@@ -1,0 +1,35 @@
+{
+  "name": "mern-shopping-app",
+  "version": "1.0.0",
+  "description": "A shopping app using MERN stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poojavpatel/mern-shopping-app.git"
+  },
+  "keywords": [
+    "MERN",
+    "Reactjs",
+    "nodejs",
+    "mongodb",
+    "express"
+  ],
+  "author": "Pooja Patel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Poojavpatel/mern-shopping-app/issues"
+  },
+  "homepage": "https://github.com/Poojavpatel/mern-shopping-app#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.16"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
