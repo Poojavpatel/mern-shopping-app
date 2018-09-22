@@ -14,6 +14,11 @@ mongoose.connect(mongouri)
     .then( () => console.log('Connected to MongoDB'))
     .catch( err => console.log('Error while connecting to MongoDB', err));
 
+// Homepage route
+app.get('/' ,(req,res) => {
+    res.send("Welcome to shooping app");
+});
+
 // use routes
 const items = require('./routes/api/items.js');
 app.use('/api/items' , items);
