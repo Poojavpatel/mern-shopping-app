@@ -5,10 +5,9 @@ const Item = require('../../models/Item.js');
 const router = express.Router();
 
 // @/api/items/  GET req
-router.get('/' ,(req,res) => {
-    const items = Item.find()
-                        .sort()
-                        .then( item => res.json(item));
+router.get('/' ,async (req,res) => {
+    const items = await Item.find().sort('name');
+    res.send(items);
 });
 
 module.exports = router;

@@ -1,12 +1,12 @@
 /* jshint esversion:6 */
 const express = require('express');
 const mongoose = require('mongoose');
-const bodyparser = require('body-parser');
 
 const app = express();
 
 //body parser middleware
-app.use(bodyparser.json());
+// app.use(bodyparser.json());
+app.use(express.json());
 
 // connecting to mongodb
 const mongouri = require('./config/keys.js').mongoURI;
