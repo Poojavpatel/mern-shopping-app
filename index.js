@@ -1,3 +1,4 @@
+/* jshint esversion:6 */
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
@@ -12,6 +13,10 @@ const mongouri = require('./config/keys.js').mongoURI;
 mongoose.connect(mongouri)
     .then( () => console.log('Connected to MongoDB'))
     .catch( err => console.log('Error while connecting to MongoDB', err));
+
+// use routes
+const items = require('./routes/api/items.js');
+app.use('/api/items' , items);
 
 // Starting server on port
 port = process.env.PORT || 5000;
