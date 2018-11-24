@@ -2,7 +2,7 @@
 /* jshint esversion:6 */
 import { createStore, applyMiddleware, compose }from 'redux';
 import thunk from 'redux-thunk';
-import rootReducer form './reducers/index.js';
+import rootReducer from './reducers/index.js';
 
 const initialState = {};
 
